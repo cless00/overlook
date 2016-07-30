@@ -27,7 +27,7 @@ public class ProfileCollectorServiceImpl implements ProfileCollectorService {
 
 		Profile profile = new Profile(elementList.get(0).text(), elementList.get(1).text(), elementList.get(2).text(),
 				elementList.get(3).text(), elementList.get(4).text(), elementList.get(5).text(),
-				elementList.get(6).text(), elementList.get(7).text(), url, battletag);
+				elementList.get(6).text(), elementList.get(7).text(), url, battletag.replace('-', '#'));
 
 		return profile;
 	}
