@@ -9,10 +9,12 @@ public class Profile {
 	private final String averageObjectiveKills;
 	private final String averageObjectiveTime;
 	private final String averageSoloKills;
-	
+	private final String url;
+	private final String battletag;
+
 	public Profile(String averageEliminations, String averageDamegeDone, String averageDeaths, String averageFinalBlows,
 			String averageHealingDone, String averageObjectiveKills, String averageObjectiveTime,
-			String averageSoloKills) {
+			String averageSoloKills, String url, String battletag) {
 		super();
 		this.averageEliminations = averageEliminations;
 		this.averageDamegeDone = averageDamegeDone;
@@ -22,6 +24,8 @@ public class Profile {
 		this.averageObjectiveKills = averageObjectiveKills;
 		this.averageObjectiveTime = averageObjectiveTime;
 		this.averageSoloKills = averageSoloKills;
+		this.url = url;
+		this.battletag = battletag;
 	}
 
 	public String getAverageEliminations() {
@@ -55,5 +59,13 @@ public class Profile {
 	public String getAverageSoloKills() {
 		return averageSoloKills;
 	}
-	
+
+	public String getUrl() {
+		return url;
+	}
+
+	public String getBattletag() {
+		return battletag;
+	}
+
 }

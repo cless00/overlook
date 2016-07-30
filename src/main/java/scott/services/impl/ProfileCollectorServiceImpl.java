@@ -19,14 +19,15 @@ public class ProfileCollectorServiceImpl implements ProfileCollectorService {
 
 	@Override
 	public Profile getProfileAverage(String battletag) throws IOException {
-		Document doc = Jsoup.connect(profileUrl + battletag).get();
+		String url = profileUrl + battletag;
+		Document doc = Jsoup.connect(url).get();
 
 		Elements elementList = doc.getElementsByClass("career-stats-section").get(0).firstElementSibling()
 				.getElementsByTag("ul").get(0).getElementsByClass("card-heading");
 
 		Profile profile = new Profile(elementList.get(0).text(), elementList.get(1).text(), elementList.get(2).text(),
 				elementList.get(3).text(), elementList.get(4).text(), elementList.get(5).text(),
-				elementList.get(6).text(), elementList.get(7).text());
+				elementList.get(6).text(), elementList.get(7).text(), url, battletag);
 
 		return profile;
 	}
