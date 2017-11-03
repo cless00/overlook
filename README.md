@@ -1,3 +1,5 @@
+https://travis-ci.org/cless00/overlook.svg?branch=master
+
 # overlook
 
 This is to provide web service for overwatch profile.
@@ -11,6 +13,3 @@ www.katecafe.com:8080/getProfile?battletag=<battletag>
 // replace hash(#) to dash(-)
 // e.g. 'http://localhost:8080/getProfile?battletag=StoneHands-3293'
 ```
-
-test
-
