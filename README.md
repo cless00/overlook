@@ -1,4 +1,4 @@
-https://travis-ci.org/cless00/overlook.svg?branch=master
+![Build Status](https://travis-ci.org/cless00/overlook.svg?branch=master)
 
 # overlook
 
