@@ -11,3 +11,6 @@ www.katecafe.com:8080/getProfile?battletag=<battletag>
 // replace hash(#) to dash(-)
 // e.g. 'http://localhost:8080/getProfile?battletag=StoneHands-3293'
 ```
+
+test
+
